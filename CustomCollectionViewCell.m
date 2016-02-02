@@ -12,6 +12,7 @@
 @interface CustomCollectionViewCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *movieImageView;
+@property (nonatomic) NSURLSessionDataTask *task;
 
 
 @end
@@ -20,7 +21,28 @@
 
 - (void)configureWithMovie:(Movies*)movie{
     
-    self.movieImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:movie.movieImage]];
+    
+    NSURLSession *sharedSession = [NSURLSession sharedSession];
+    
+    
+    self.movieImageView.image = nil;
+    
+    [self.task cancel];
+    
+    self.task = [sharedSession dataTaskWithURL:movie.movieImage completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        UIImage *image = [UIImage imageWithData:data];
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.movieImageView.image = image;
+        });
+        
+    }];
+    
+    [self.task resume];
+    
+    //self.movieImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:movie.movieImage]];
     
 }
 

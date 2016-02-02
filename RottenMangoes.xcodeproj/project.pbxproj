@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A629B8CC1C613CAC00403AAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A629B8CB1C613CAC00403AAD /* DetailViewController.m */; };
 		A6A03BC61C6006A100BBAA6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BC51C6006A100BBAA6D /* main.m */; };
 		A6A03BC91C6006A100BBAA6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BC81C6006A100BBAA6D /* AppDelegate.m */; };
 		A6A03BCC1C6006A100BBAA6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BCB1C6006A100BBAA6D /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A629B8CA1C613CAC00403AAD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A629B8CB1C613CAC00403AAD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		A6A03BC11C6006A100BBAA6D /* RottenMangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenMangoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A03BC51C6006A100BBAA6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6A03BC71C6006A100BBAA6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				A6A03BC81C6006A100BBAA6D /* AppDelegate.m */,
 				A6A03BCA1C6006A100BBAA6D /* ViewController.h */,
 				A6A03BCB1C6006A100BBAA6D /* ViewController.m */,
+				A629B8CA1C613CAC00403AAD /* DetailViewController.h */,
+				A629B8CB1C613CAC00403AAD /* DetailViewController.m */,
 				A6A03BFD1C602F4000BBAA6D /* CustomCollectionViewCell.h */,
 				A6A03BFE1C602F4000BBAA6D /* CustomCollectionViewCell.m */,
 				A6A03BF71C600B4F00BBAA6D /* Movies.h */,
@@ -291,6 +296,7 @@
 				A6A03BFF1C602F4000BBAA6D /* CustomCollectionViewCell.m in Sources */,
 				A6A03BF91C600B4F00BBAA6D /* Movies.m in Sources */,
 				A6A03BC61C6006A100BBAA6D /* main.m in Sources */,
+				A629B8CC1C613CAC00403AAD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +520,7 @@
 				A6A03BF01C6006A100BBAA6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A03BF11C6006A100BBAA6D /* Build configuration list for PBXNativeTarget "RottenMangoesTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +529,7 @@
 				A6A03BF31C6006A100BBAA6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6A03BF41C6006A100BBAA6D /* Build configuration list for PBXNativeTarget "RottenMangoesUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +538,7 @@
 				A6A03BF61C6006A100BBAA6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

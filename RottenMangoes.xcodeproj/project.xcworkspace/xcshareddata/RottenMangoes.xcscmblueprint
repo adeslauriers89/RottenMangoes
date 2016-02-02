@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3C42AE1C2A9839BB31E1D8A9C1516A531A6109A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF7A206D65046427C3CE8D2E1DD1F9FF708CF61F" : 0,
+    "3C42AE1C2A9839BB31E1D8A9C1516A531A6109A9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "231EAB40-F639-4922-BF97-EFE33CDF3514",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF7A206D65046427C3CE8D2E1DD1F9FF708CF61F" : "",
+    "3C42AE1C2A9839BB31E1D8A9C1516A531A6109A9" : "RottenMangoes\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RottenMangoes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RottenMangoes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adeslauriers89\/RottenMangoes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C42AE1C2A9839BB31E1D8A9C1516A531A6109A9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/adeslauriers89\/iOS-prep-assignments.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF7A206D65046427C3CE8D2E1DD1F9FF708CF61F"
+    }
+  ]
+}

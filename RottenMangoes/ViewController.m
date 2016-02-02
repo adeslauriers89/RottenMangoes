@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Movies.h"
 #import "CustomCollectionViewCell.h"
+#import "DetailViewController.h"
 
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -103,6 +104,19 @@ static NSString * const reuseIdentifier = @"Cell";
     [cell configureWithMovie:individual];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"showDetailViewController"]) {
+        
+        NSIndexPath *indexPath = self.collectionView.indexPathsForSelectedItems.firstObject;
+        
+        DetailViewController *destinationViewController = [segue destinationViewController];
+        
+        destinationViewController.movie = self.moviesArray[indexPath.row];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
