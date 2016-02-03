@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A629B8CC1C613CAC00403AAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A629B8CB1C613CAC00403AAD /* DetailViewController.m */; };
+		A629B8CE1C6147FA00403AAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A629B8CD1C6147FA00403AAD /* MapKit.framework */; };
+		A629B8D01C61480200403AAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A629B8CF1C61480200403AAD /* CoreLocation.framework */; };
+		A629B8D31C614E1900403AAD /* TheatreMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A629B8D21C614E1900403AAD /* TheatreMapViewController.m */; };
+		A629B8DA1C615D7B00403AAD /* MyLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A629B8D91C615D7B00403AAD /* MyLocationManager.m */; };
+		A629B8DD1C61677500403AAD /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = A629B8DC1C61677500403AAD /* Theatre.m */; };
 		A6A03BC61C6006A100BBAA6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BC51C6006A100BBAA6D /* main.m */; };
 		A6A03BC91C6006A100BBAA6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BC81C6006A100BBAA6D /* AppDelegate.m */; };
 		A6A03BCC1C6006A100BBAA6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A03BCB1C6006A100BBAA6D /* ViewController.m */; };
@@ -41,6 +46,14 @@
 /* Begin PBXFileReference section */
 		A629B8CA1C613CAC00403AAD /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A629B8CB1C613CAC00403AAD /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A629B8CD1C6147FA00403AAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A629B8CF1C61480200403AAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A629B8D11C614E1900403AAD /* TheatreMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreMapViewController.h; sourceTree = "<group>"; };
+		A629B8D21C614E1900403AAD /* TheatreMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreMapViewController.m; sourceTree = "<group>"; };
+		A629B8D81C615D7B00403AAD /* MyLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationManager.h; sourceTree = "<group>"; };
+		A629B8D91C615D7B00403AAD /* MyLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationManager.m; sourceTree = "<group>"; };
+		A629B8DB1C61677500403AAD /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		A629B8DC1C61677500403AAD /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
 		A6A03BC11C6006A100BBAA6D /* RottenMangoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenMangoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A03BC51C6006A100BBAA6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6A03BC71C6006A100BBAA6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A629B8D01C61480200403AAD /* CoreLocation.framework in Frameworks */,
+				A629B8CE1C6147FA00403AAD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,9 +105,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A629B8D41C614E3200403AAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A629B8D51C614E3900403AAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6A03BFD1C602F4000BBAA6D /* CustomCollectionViewCell.h */,
+				A6A03BFE1C602F4000BBAA6D /* CustomCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A629B8D61C614E4200403AAD /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6A03BCA1C6006A100BBAA6D /* ViewController.h */,
+				A6A03BCB1C6006A100BBAA6D /* ViewController.m */,
+				A629B8CA1C613CAC00403AAD /* DetailViewController.h */,
+				A629B8CB1C613CAC00403AAD /* DetailViewController.m */,
+				A629B8D11C614E1900403AAD /* TheatreMapViewController.h */,
+				A629B8D21C614E1900403AAD /* TheatreMapViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		A629B8D71C614E7D00403AAD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A6A03BCD1C6006A100BBAA6D /* Main.storyboard */,
+				A6A03BD21C6006A100BBAA6D /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		A6A03BB81C6006A100BBAA6D = {
 			isa = PBXGroup;
 			children = (
+				A629B8CF1C61480200403AAD /* CoreLocation.framework */,
+				A629B8CD1C6147FA00403AAD /* MapKit.framework */,
 				A6A03BC31C6006A100BBAA6D /* RottenMangoes */,
 				A6A03BDD1C6006A100BBAA6D /* RottenMangoesTests */,
 				A6A03BE81C6006A100BBAA6D /* RottenMangoesUITests */,
@@ -113,22 +168,20 @@
 		A6A03BC31C6006A100BBAA6D /* RottenMangoes */ = {
 			isa = PBXGroup;
 			children = (
+				A629B8D71C614E7D00403AAD /* UI */,
+				A629B8D61C614E4200403AAD /* View Controller */,
+				A629B8D51C614E3900403AAD /* View */,
+				A629B8D41C614E3200403AAD /* Model */,
 				A6A03BC71C6006A100BBAA6D /* AppDelegate.h */,
 				A6A03BC81C6006A100BBAA6D /* AppDelegate.m */,
-				A6A03BCA1C6006A100BBAA6D /* ViewController.h */,
-				A6A03BCB1C6006A100BBAA6D /* ViewController.m */,
-				A629B8CA1C613CAC00403AAD /* DetailViewController.h */,
-				A629B8CB1C613CAC00403AAD /* DetailViewController.m */,
-				A6A03BFD1C602F4000BBAA6D /* CustomCollectionViewCell.h */,
-				A6A03BFE1C602F4000BBAA6D /* CustomCollectionViewCell.m */,
 				A6A03BF71C600B4F00BBAA6D /* Movies.h */,
 				A6A03BF81C600B4F00BBAA6D /* Movies.m */,
+				A629B8DB1C61677500403AAD /* Theatre.h */,
+				A629B8DC1C61677500403AAD /* Theatre.m */,
+				A629B8D81C615D7B00403AAD /* MyLocationManager.h */,
+				A629B8D91C615D7B00403AAD /* MyLocationManager.m */,
 				A6A03BFA1C6013A400BBAA6D /* ServerManager.h */,
 				A6A03BFB1C6013A400BBAA6D /* ServerManager.m */,
-				A6A03BCD1C6006A100BBAA6D /* Main.storyboard */,
-				A6A03BD01C6006A100BBAA6D /* Assets.xcassets */,
-				A6A03BD21C6006A100BBAA6D /* LaunchScreen.storyboard */,
-				A6A03BD51C6006A100BBAA6D /* Info.plist */,
 				A6A03BC41C6006A100BBAA6D /* Supporting Files */,
 			);
 			path = RottenMangoes;
@@ -137,7 +190,9 @@
 		A6A03BC41C6006A100BBAA6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6A03BD01C6006A100BBAA6D /* Assets.xcassets */,
 				A6A03BC51C6006A100BBAA6D /* main.m */,
+				A6A03BD51C6006A100BBAA6D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -295,8 +350,11 @@
 				A6A03BC91C6006A100BBAA6D /* AppDelegate.m in Sources */,
 				A6A03BFF1C602F4000BBAA6D /* CustomCollectionViewCell.m in Sources */,
 				A6A03BF91C600B4F00BBAA6D /* Movies.m in Sources */,
+				A629B8DD1C61677500403AAD /* Theatre.m in Sources */,
 				A6A03BC61C6006A100BBAA6D /* main.m in Sources */,
+				A629B8DA1C615D7B00403AAD /* MyLocationManager.m in Sources */,
 				A629B8CC1C613CAC00403AAD /* DetailViewController.m in Sources */,
+				A629B8D31C614E1900403AAD /* TheatreMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "CustomCollectionViewCell.h"
 #import "DetailViewController.h"
 
+
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

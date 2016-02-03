@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "Movies.h"
+#import "TheatreMapViewController.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *detailVCImage;
@@ -59,14 +60,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([[segue identifier] isEqualToString:@"showTheatreMapSegue"]) {
+        
+        TheatreMapViewController *destinationViewController = [segue destinationViewController];
+        destinationViewController.movie = self.movie;
+    }
+    
 }
-*/
+
+- (IBAction)showTheatreMapButton:(UIButton *)sender {
+    
+    
+}
 
 @end
